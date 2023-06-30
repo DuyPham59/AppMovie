@@ -44,7 +44,10 @@ public class ChangePasswordActivity extends AppCompatActivity {
                 // Xử lý đăng ký tại đây nếu mật khẩu và xác nhận mật khẩu trùng khớp
                 if (dbHelper.updatePassword(newpassword)){
 
+
                     Toast.makeText(this, "thay đổi mật khẩu thành công", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(this, LoginActivity.class);
+                    startActivity(intent);
 
                 }
                 else Toast.makeText(this, "that bai", Toast.LENGTH_SHORT).show();

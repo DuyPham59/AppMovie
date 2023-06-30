@@ -18,14 +18,14 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // Tạo bảng để lưu thông tin người dùng
         db.execSQL("CREATE TABLE users (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT,email TEXT ,password TEXT)");
-        db.execSQL("CREATE TABLE informations (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, gender TEXT ,address TEXT,phone TEXT,user_id INTEGER,FOREIGN KEY(user_id) REFERENCES users(id))");
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // Cập nhật bảng
         db.execSQL("DROP TABLE IF EXISTS users");
-        db.execSQL("DROP TABLE IF EXISTS informations");
+
         onCreate(db);
     }
     public boolean checkLogin( String account , String password){

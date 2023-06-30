@@ -3,49 +3,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center">
 
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tên đăng nhập"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColorHint="#1DE1B4"/>
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="email"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColorHint="#1DE1B4"/>
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Mật khẩu"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="#1DE1B4"/>
 
     <EditText
         android:id="@+id/editTextConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Xác nhận mật khẩu"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="#1DE1B4"/>
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Đăng ký"
-        android:onClick="onRegisterClick"/>
+        android:onClick="onRegisterClick"
+        android:background="#46635A"
+        android:textColor="#1DE1B4"/>
 
     <TextView
         android:id="@+id/textViewLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Đã có tài khoản? Đăng nhập"
-        android:onClick="onLoginClick"/>
+        android:onClick="onLoginClick"
+        android:textColor="#1DE1B4"
+        android:layout_marginTop="15dp"/>
 
 
 </LinearLayout>

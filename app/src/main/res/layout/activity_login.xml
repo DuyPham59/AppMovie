@@ -3,41 +3,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center">
 
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tên đăng nhập"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColorHint="#1DE1B4"/>
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Mật khẩu"
-        android:inputType="textPassword" />
-
+        android:inputType="textPassword"
+        android:textColorHint="#1DE1B4"/>
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#46635A"
         android:text="Đăng nhập"
+        android:textColor="#1DE1B4"
         android:onClick="onLoginClick"/>
 
     <TextView
         android:id="@+id/textViewRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
         android:text=" Đăng ký"
+        android:textColor="#1DE1B4"
         android:onClick="onRegisterClick"/>
 
     <TextView
         android:id="@+id/textViewForgotpassword"
-        android:layout_width="122dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quên mật khẩu"
-        android:onClick="onForgotPasswordClick"/>
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#1DE1B4"
+        android:onClick="onForgotPasswordClick"
+        android:text="Quên mật khẩu" />
 
 </LinearLayout>
